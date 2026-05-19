@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://blyrin5ecfvpj"]
 
-[ext_resource type="PackedScene" uid="uid://dico18l0tx564" path="res://assets/bg.tscn" id="1_2d37k"]
+[ext_resource type="PackedScene" uid="uid://dico18l0tx564" path="res://assets/objects/bg.tscn" id="1_2d37k"]
 [ext_resource type="Script" uid="uid://brm374e72p8pk" path="res://assets/scripts/main.gd" id="1_836ik"]
-[ext_resource type="PackedScene" uid="uid://bp2k1yqmnig22" path="res://assets/dino.tscn" id="2_836ik"]
-[ext_resource type="PackedScene" uid="uid://0k7p3ofvjpce" path="res://assets/ground.tscn" id="3_j2eim"]
-[ext_resource type="PackedScene" uid="uid://p0tapbrh4kj2" path="res://assets/hud.tscn" id="5_j2eim"]
-[ext_resource type="PackedScene" uid="uid://d0giw0bm3yo4m" path="res://assets/gameover.tscn" id="6_ujfqy"]
+[ext_resource type="PackedScene" uid="uid://bp2k1yqmnig22" path="res://assets/objects/dino.tscn" id="2_836ik"]
+[ext_resource type="PackedScene" uid="uid://0k7p3ofvjpce" path="res://assets/objects/ground.tscn" id="3_j2eim"]
+[ext_resource type="PackedScene" uid="uid://p0tapbrh4kj2" path="res://assets/objects/hud.tscn" id="5_j2eim"]
+[ext_resource type="PackedScene" uid="uid://d0giw0bm3yo4m" path="res://assets/objects/gameover.tscn" id="6_ujfqy"]
 
 [node name="main" type="Node" unique_id=1620578132]
 script = ExtResource("1_836ik")
