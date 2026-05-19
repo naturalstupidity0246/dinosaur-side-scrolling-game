@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bp2k1yqmnig22"]
 
+[ext_resource type="Script" uid="uid://ciowpa0wv8q1" path="res://assets/scripts/dino.gd" id="1_3tl40"]
 [ext_resource type="Texture2D" uid="uid://caueu6jr3oeil" path="res://assets/img/mort.png" id="1_5rq2s"]
 [ext_resource type="AudioStream" uid="uid://c2vodl10edj2u" path="res://assets/sound/jump.wav" id="2_3tl40"]
 
@@ -152,11 +153,13 @@ size = Vector2(7, 13.25)
 size = Vector2(11, 8)
 
 [node name="dino" type="CharacterBody2D" unique_id=38499974]
+z_index = 1
 scale = Vector2(8, 8)
+script = ExtResource("1_3tl40")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=549801795]
 sprite_frames = SubResource("SpriteFrames_vdxsx")
-animation = &"duck"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="run_col" type="CollisionShape2D" parent="." unique_id=738089936]
@@ -167,6 +170,6 @@ shape = SubResource("RectangleShape2D_bkp5w")
 position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_qm1w2")
 
-[node name="jump" type="AudioStreamPlayer2D" parent="." unique_id=762847897]
+[node name="jump_sound" type="AudioStreamPlayer2D" parent="." unique_id=762847897]
 stream = ExtResource("2_3tl40")
 volume_db = -25.0

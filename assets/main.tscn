@@ -11,7 +11,7 @@
 [node name="ground" parent="." unique_id=1982575378 instance=ExtResource("3_j2eim")]
 
 [node name="dino" parent="." unique_id=38499974 instance=ExtResource("2_836ik")]
-position = Vector2(121, 507)
+position = Vector2(160, 480)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2085010753]
 position = Vector2(576, 324)
