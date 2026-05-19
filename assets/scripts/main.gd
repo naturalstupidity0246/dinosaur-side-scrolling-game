@@ -4,10 +4,10 @@ extends Node
 var save_path = "user://variable.save"
 
 #preload obstacles
-var stump = preload("res://assets/objects/obstacles/stump.tscn");
-var rock = preload("res://assets/objects/obstacles/rock.tscn");
-var bird = preload("res://assets/objects/obstacles/bird.tscn");
-var barrel = preload("res://assets/objects/obstacles/barrell.tscn")
+var stump = preload("res://assets/stump.tscn");
+var rock = preload("res://assets/rock.tscn");
+var bird = preload("res://assets/bird.tscn");
+var barrel = preload("res://assets/barrell.tscn")
 var obstacle_types := [stump, rock, barrel];
 var obstacles : Array;
 var bird_heights := [200, 390] #randomizes when the bird will spawn
