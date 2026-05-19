@@ -8,7 +8,10 @@
 
 [node name="bg" type="Parallax2D" unique_id=657349785]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1912861428]
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1435778369]
+repeat_size = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5" unique_id=1912861428]
 texture = ExtResource("1_7j0oa")
 centered = false
 

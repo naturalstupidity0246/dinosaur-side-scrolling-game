@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://p0tapbrh4kj2"]
+
+[ext_resource type="FontFile" uid="uid://vcnsxrj8yjqf" path="res://assets/fonts/retro.ttf" id="1_knk3d"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1568357673]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1765500367]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 16
+
+[node name="HIGHEST SCORE" type="Label" parent="MarginContainer" unique_id=1066224177]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 0.49411765)
+theme_override_fonts/font = ExtResource("1_knk3d")
+theme_override_font_sizes/font_size = 40
+text = "HIGHEST SCORE"
+vertical_alignment = 1
+text_direction = 1
+
+[node name="current_score" type="Label" parent="MarginContainer" unique_id=2078113167]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_knk3d")
+theme_override_font_sizes/font_size = 40
+text = "SCORE"
+vertical_alignment = 1
+text_direction = 1
+
+[node name="pressspaceto_play" type="Label" parent="MarginContainer" unique_id=540333094]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_knk3d")
+theme_override_font_sizes/font_size = 64
+text = "PRESS SPACE TO PLAY"
+vertical_alignment = 1
+text_direction = 1
