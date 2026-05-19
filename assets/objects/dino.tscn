@@ -172,4 +172,4 @@ shape = SubResource("RectangleShape2D_qm1w2")
 
 [node name="jump_sound" type="AudioStreamPlayer2D" parent="." unique_id=762847897]
 stream = ExtResource("2_3tl40")
-volume_db = -25.0
+volume_db = -5.0

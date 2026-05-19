@@ -27,6 +27,7 @@ const SCORE_MODIFIER: int = 50;
 @onready var ground: StaticBody2D = $ground
 @onready var hud: CanvasLayer = $HUD
 @onready var gameover: CanvasLayer = $GAMEOVER
+@onready var game_music: AudioStreamPlayer = $game_music
 var player: CharacterBody2D;
 
 var speed: int; #changing speed
@@ -48,6 +49,8 @@ func _ready():
 	new_game()
 
 func new_game():
+	game_music.stream = load("res://assets/music/Rude Buster.mp3")
+	game_music.play()
 	load_data()
 	#reset var
 	score = 0;

@@ -1,26 +1,31 @@
 [gd_scene format=3 uid="uid://blyrin5ecfvpj"]
 
-[ext_resource type="PackedScene" uid="uid://dico18l0tx564" path="res://assets/objects/bg.tscn" id="1_2d37k"]
-[ext_resource type="Script" uid="uid://brm374e72p8pk" path="res://assets/scripts/main.gd" id="1_836ik"]
-[ext_resource type="PackedScene" uid="uid://bp2k1yqmnig22" path="res://assets/objects/dino.tscn" id="2_836ik"]
-[ext_resource type="PackedScene" uid="uid://0k7p3ofvjpce" path="res://assets/objects/ground.tscn" id="3_j2eim"]
-[ext_resource type="PackedScene" uid="uid://p0tapbrh4kj2" path="res://assets/objects/hud.tscn" id="5_j2eim"]
-[ext_resource type="PackedScene" uid="uid://d0giw0bm3yo4m" path="res://assets/objects/gameover.tscn" id="6_ujfqy"]
+[ext_resource type="Script" uid="uid://brm374e72p8pk" path="res://assets/scripts/main.gd" id="1_sgm13"]
+[ext_resource type="PackedScene" uid="uid://dico18l0tx564" path="res://assets/objects/bg.tscn" id="2_rr34a"]
+[ext_resource type="PackedScene" uid="uid://0k7p3ofvjpce" path="res://assets/objects/ground.tscn" id="3_y0dj4"]
+[ext_resource type="PackedScene" uid="uid://bp2k1yqmnig22" path="res://assets/objects/dino.tscn" id="4_guch4"]
+[ext_resource type="PackedScene" uid="uid://p0tapbrh4kj2" path="res://assets/objects/hud.tscn" id="5_30te2"]
+[ext_resource type="PackedScene" uid="uid://d0giw0bm3yo4m" path="res://assets/objects/gameover.tscn" id="6_06ogf"]
+[ext_resource type="AudioStream" uid="uid://dy6alrjiwd2vi" path="res://assets/music/Rude Buster.mp3" id="7_5twwt"]
 
 [node name="main" type="Node" unique_id=1620578132]
-script = ExtResource("1_836ik")
+script = ExtResource("1_sgm13")
 
-[node name="bg" parent="." unique_id=657349785 instance=ExtResource("1_2d37k")]
+[node name="bg" parent="." unique_id=657349785 instance=ExtResource("2_rr34a")]
 
-[node name="ground" parent="." unique_id=1982575378 instance=ExtResource("3_j2eim")]
+[node name="ground" parent="." unique_id=1982575378 instance=ExtResource("3_y0dj4")]
 
-[node name="dino" parent="." unique_id=38499974 instance=ExtResource("2_836ik")]
+[node name="dino" parent="." unique_id=38499974 instance=ExtResource("4_guch4")]
 position = Vector2(160, 480)
 
 [node name="camera" type="Camera2D" parent="." unique_id=2085010753]
 position = Vector2(576, 324)
 
-[node name="HUD" parent="." unique_id=1568357673 instance=ExtResource("5_j2eim")]
+[node name="HUD" parent="." unique_id=1568357673 instance=ExtResource("5_30te2")]
 
-[node name="GAMEOVER" parent="." unique_id=1386364824 instance=ExtResource("6_ujfqy")]
+[node name="GAMEOVER" parent="." unique_id=1386364824 instance=ExtResource("6_06ogf")]
 process_mode = 2
+
+[node name="game_music" type="AudioStreamPlayer" parent="." unique_id=2129881436]
+stream = ExtResource("7_5twwt")
+autoplay = true
