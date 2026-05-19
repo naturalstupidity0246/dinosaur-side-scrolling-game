@@ -4,10 +4,10 @@ extends Node
 var save_path = "user://variable.save"
 
 #preload obstacles
-var stump = preload("res://assets/stump.tscn");
-var rock = preload("res://assets/rock.tscn");
-var bird = preload("res://assets/bird.tscn");
-var barrel = preload("res://assets/barrell.tscn")
+var stump = preload("res://assets/objects/obstacles/stump.tscn");
+var rock = preload("res://assets/objects/obstacles/rock.tscn");
+var bird = preload("res://assets/objects/obstacles/bird.tscn");
+var barrel = preload("res://assets/objects/obstacles/barrell.tscn")
 var obstacle_types := [stump, rock, barrel];
 var obstacles : Array;
 var bird_heights := [200, 390] #randomizes when the bird will spawn
@@ -52,8 +52,7 @@ func new_game():
 	#reset var
 	score = 0;
 	show_score();
-	#show high score
-	check_high_score()
+	check_high_score();
 	get_tree().paused = false; #SO IF There is a gameover the game restarts and if we restart the gameunpauses
 	difficulty = 0;
 	#resets everything if there is a new game
@@ -88,6 +87,8 @@ func _process(_delta):
 		#update score
 		score += speed 
 		show_score()
+		#show high score
+		check_high_score()
 		
 		#update ground position to move along with the camera
 		if camera.position.x - ground.position.x > screen_size.x * 1.5:
