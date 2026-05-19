@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://d0giw0bm3yo4m"]
+
+[ext_resource type="FontFile" uid="uid://vcnsxrj8yjqf" path="res://assets/fonts/retro.ttf" id="1_t0xof"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t0xof"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wq4dk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87yat"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uydeh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sb1ye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sadjg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k0k87"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ui0b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2axfd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ff70j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ypjx8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_creek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ncd7c"]
+
+[node name="GAMEOVER" type="CanvasLayer" unique_id=1568357673]
+
+[node name="GAMEOVER" type="Label" parent="." unique_id=540333094]
+offset_left = 356.0
+offset_top = 283.0
+offset_right = 795.0
+offset_bottom = 365.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.8285353, 0, 0.027083559, 1)
+theme_override_fonts/font = ExtResource("1_t0xof")
+theme_override_font_sizes/font_size = 64
+text = "GAME OVER!"
+vertical_alignment = 1
+text_direction = 1
+
+[node name="restart" type="Label" parent="." unique_id=75439487]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.5
+offset_top = 31.0
+offset_right = 135.5
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.827451, 0, 0.02745098, 1)
+theme_override_fonts/font = ExtResource("1_t0xof")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t0xof")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wq4dk")
+text = "restart?"
+vertical_alignment = 1
+text_direction = 1
+
+[node name="restart2" type="Button" parent="." unique_id=1726179156]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.5
+offset_top = 31.0
+offset_right = 139.5
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_fonts/font = ExtResource("1_t0xof")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxEmpty_87yat")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_uydeh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sb1ye")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_sadjg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k0k87")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8ui0b")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_2axfd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ff70j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ypjx8")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_creek")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ncd7c")
+text = "restart?"

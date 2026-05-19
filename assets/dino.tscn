@@ -152,7 +152,7 @@ size = Vector2(7, 13.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qm1w2"]
 size = Vector2(11, 8)
 
-[node name="dino" type="CharacterBody2D" unique_id=38499974]
+[node name="dino" type="CharacterBody2D" unique_id=38499974 groups=["player"]]
 z_index = 1
 scale = Vector2(8, 8)
 script = ExtResource("1_3tl40")

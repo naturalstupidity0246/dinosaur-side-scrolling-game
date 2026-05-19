@@ -15,7 +15,7 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 32
 theme_override_constants/margin_bottom = 16
 
-[node name="HIGHEST SCORE" type="Label" parent="MarginContainer" unique_id=1066224177]
+[node name="HIGHESTSCORE" type="Label" parent="MarginContainer" unique_id=1066224177]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
